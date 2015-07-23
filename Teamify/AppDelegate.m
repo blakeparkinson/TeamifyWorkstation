@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "AFNetworking.h"
 #import "Constants.h"
+#import "IIViewDeckController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,6 +20,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    
     
     return YES;
 }
@@ -52,15 +55,58 @@
 
 -(void)syncData{
     
+    [self syncEmployees];
+    
+}
+
+-(void)syncEmployees{
+    
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:kBaseURL
+    [manager GET:[NSString stringWithFormat:@"%@/employees",kBaseURL]
       parameters:nil
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
+             
+             [self clearEntity:@"Employees"];
+             
+              NSManagedObjectContext *context = [self managedObjectContext];
+             
+             for(NSDictionary *employeeObject in responseObject){
+                 
+                 NSManagedObject *newDevice = [NSEntityDescription insertNewObjectForEntityForName:@"Employees" inManagedObjectContext:context];
+                 
+                 [newDevice setValue:[employeeObject objectForKey:@"first_name"] forKey:@"first_name"];
+                 [newDevice setValue:[employeeObject objectForKey:@"last_name"] forKey:@"last_name"];
+                 
+                 CGFloat employeeId = (CGFloat)[[employeeObject valueForKey:@"id"] floatValue];
+                 [newDevice setValue:[NSNumber numberWithFloat:employeeId] forKey:@"passcode"];
+                 
+                 NSError *error = nil;
+               
+                 if (![context save:&error]) {
+                     NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+                 }
+             }
+             
             
-           
+             
          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-           
+             NSLog(@"%@",error);
          }];
+    
+}
+
+
+
+-(void)clearEntity:(NSString *)entity{
+    NSManagedObjectContext *context = [self managedObjectContext];
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:entity];
+    NSMutableArray *data = [[context executeFetchRequest:fetchRequest error:nil] mutableCopy];
+    for (NSManagedObject *obj in data) {
+        [context  deleteObject:obj];
+    }
+    NSError *saveError = nil;
+    [context save:&saveError];
     
 }
 

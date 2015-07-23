@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01330F0F1B6159BC00732B8D /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01330F0E1B6159BC00732B8D /* InitialViewController.m */; };
+		01330F121B615E3900732B8D /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01330F111B615E3900732B8D /* SidebarViewController.m */; };
+		01330F151B61614500732B8D /* ChecklistVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01330F141B61614500732B8D /* ChecklistVC.m */; };
 		01BF2DD41B610F9B001D7EBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BF2DD31B610F9B001D7EBC /* main.m */; };
 		01BF2DD71B610F9B001D7EBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BF2DD61B610F9B001D7EBC /* AppDelegate.m */; };
 		01BF2DDA1B610F9B001D7EBC /* Teamify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01BF2DD81B610F9B001D7EBC /* Teamify.xcdatamodeld */; };
@@ -31,6 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01330F0D1B6159BC00732B8D /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		01330F0E1B6159BC00732B8D /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
+		01330F101B615E3900732B8D /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarViewController.h; sourceTree = "<group>"; };
+		01330F111B615E3900732B8D /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarViewController.m; sourceTree = "<group>"; };
+		01330F131B61614500732B8D /* ChecklistVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecklistVC.h; sourceTree = "<group>"; };
+		01330F141B61614500732B8D /* ChecklistVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChecklistVC.m; sourceTree = "<group>"; };
 		01BF2DCE1B610F9B001D7EBC /* Teamify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teamify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01BF2DD21B610F9B001D7EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01BF2DD31B610F9B001D7EBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -108,6 +117,12 @@
 				01BF2DD11B610F9B001D7EBC /* Supporting Files */,
 				01BF2E021B6118BB001D7EBC /* SignInVC.h */,
 				01BF2E031B6118BB001D7EBC /* SignInVC.m */,
+				01330F0D1B6159BC00732B8D /* InitialViewController.h */,
+				01330F0E1B6159BC00732B8D /* InitialViewController.m */,
+				01330F101B615E3900732B8D /* SidebarViewController.h */,
+				01330F111B615E3900732B8D /* SidebarViewController.m */,
+				01330F131B61614500732B8D /* ChecklistVC.h */,
+				01330F141B61614500732B8D /* ChecklistVC.m */,
 			);
 			path = Teamify;
 			sourceTree = "<group>";
@@ -311,6 +326,9 @@
 				01BF2DDA1B610F9B001D7EBC /* Teamify.xcdatamodeld in Sources */,
 				01BF2DFD1B6112ED001D7EBC /* UILabel+TMFLabel.m in Sources */,
 				01BF2E041B6118BB001D7EBC /* SignInVC.m in Sources */,
+				01330F151B61614500732B8D /* ChecklistVC.m in Sources */,
+				01330F121B615E3900732B8D /* SidebarViewController.m in Sources */,
+				01330F0F1B6159BC00732B8D /* InitialViewController.m in Sources */,
 				01BF2DD71B610F9B001D7EBC /* AppDelegate.m in Sources */,
 				01BF2DD41B610F9B001D7EBC /* main.m in Sources */,
 			);

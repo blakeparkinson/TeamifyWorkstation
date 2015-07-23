@@ -8,6 +8,7 @@
 
 #import "SignInVC.h"
 #import <QuartzCore/QuartzCore.h>
+#import <ViewDeck/IIViewDeckController.h>
 @interface SignInVC ()
 
 @end
@@ -15,6 +16,7 @@
 @implementation SignInVC
 
 - (void)viewDidLoad {
+  
     [super viewDidLoad];
    
     self.btnClockOut.layer.cornerRadius = 5;
@@ -31,6 +33,7 @@
 }
 
 - (IBAction)doSignIn:(id)sender {
+   
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sign In"
                                                     message:@"Enter Passcode"
                                                    delegate:self
@@ -58,9 +61,28 @@
     NSManagedObjectContext *context = [self managedObjectContext];
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Employees"];
+    
+    int passcode = [[[alertView textFieldAtIndex:0] text] intValue];
+    
+    NSPredicate *predicateID = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"passcode == %i",passcode]];
+    
+    [fetchRequest setPredicate:predicateID];
     NSArray *employees = [context executeFetchRequest:fetchRequest error:nil];
     if([employees count] > 0){
-    NSLog(@"%@",[employees objectAtIndex:0]);
+        
+         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        [self.viewDeckController setCenterController:[storyboard instantiateViewControllerWithIdentifier:@"CenterVC"]];
+        [self.viewDeckController toggleLeftView];
+    }
+    else{
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Passcode Not Found"
+                                                        message:@"Try Again"
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        alert.alertViewStyle=UIAlertViewStyleDefault;
+        [alert show];
     }
 }
 

@@ -20,11 +20,14 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - ViewDeck (2.3.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - ViewDeck (~> 2.3.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  ViewDeck: 3e9bfcc36d889155d77ae47811a4d48714ee8d0c
 
 COCOAPODS: 0.35.0

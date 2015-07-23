@@ -9,4 +9,4 @@
 
 #define kColorGreen [UIColor colorWithRed:33.0f / 255.0f green:192.0f / 255.05 blue:100.0f / 255.0f alpha:1.0f]
 
-#define kBaseURL @"http://atomicburger.herokuapp.com/api/1/inventory"
+#define kBaseURL @"http://teamify.herokuapp.com/api/v1"
