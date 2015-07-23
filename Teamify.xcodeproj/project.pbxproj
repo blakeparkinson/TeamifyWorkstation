@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01BF2DD41B610F9B001D7EBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BF2DD31B610F9B001D7EBC /* main.m */; };
+		01BF2DD71B610F9B001D7EBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BF2DD61B610F9B001D7EBC /* AppDelegate.m */; };
+		01BF2DDA1B610F9B001D7EBC /* Teamify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01BF2DD81B610F9B001D7EBC /* Teamify.xcdatamodeld */; };
+		01BF2DE01B610F9B001D7EBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BF2DDE1B610F9B001D7EBC /* Main.storyboard */; };
+		01BF2DE21B610F9B001D7EBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BF2DE11B610F9B001D7EBC /* Images.xcassets */; };
+		01BF2DE51B610F9B001D7EBC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01BF2DE31B610F9B001D7EBC /* LaunchScreen.xib */; };
+		01BF2DF11B610F9B001D7EBC /* TeamifyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BF2DF01B610F9B001D7EBC /* TeamifyTests.m */; };
+		01BF2DFD1B6112ED001D7EBC /* UILabel+TMFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BF2DFC1B6112ED001D7EBC /* UILabel+TMFLabel.m */; };
+		01BF2E011B6116E6001D7EBC /* LaunchLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01BF2E001B6116E6001D7EBC /* LaunchLogo.png */; };
+		01BF2E041B6118BB001D7EBC /* SignInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BF2E031B6118BB001D7EBC /* SignInVC.m */; };
+		CC42B138E126638B23F53DAD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2A5C8A5266D090235C7380 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01BF2DEB1B610F9B001D7EBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01BF2DC61B610F9B001D7EBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01BF2DCD1B610F9B001D7EBC;
+			remoteInfo = Teamify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01BF2DCE1B610F9B001D7EBC /* Teamify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teamify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01BF2DD21B610F9B001D7EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01BF2DD31B610F9B001D7EBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01BF2DD51B610F9B001D7EBC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		01BF2DD61B610F9B001D7EBC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		01BF2DD91B610F9B001D7EBC /* Teamify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Teamify.xcdatamodel; sourceTree = "<group>"; };
+		01BF2DDF1B610F9B001D7EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01BF2DE11B610F9B001D7EBC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		01BF2DE41B610F9B001D7EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		01BF2DEA1B610F9B001D7EBC /* TeamifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeamifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01BF2DEF1B610F9B001D7EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01BF2DF01B610F9B001D7EBC /* TeamifyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamifyTests.m; sourceTree = "<group>"; };
+		01BF2DFA1B6112D5001D7EBC /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		01BF2DFB1B6112E7001D7EBC /* UILabel+TMFLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+TMFLabel.h"; sourceTree = "<group>"; };
+		01BF2DFC1B6112ED001D7EBC /* UILabel+TMFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TMFLabel.m"; sourceTree = "<group>"; };
+		01BF2E001B6116E6001D7EBC /* LaunchLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchLogo.png; sourceTree = "<group>"; };
+		01BF2E021B6118BB001D7EBC /* SignInVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInVC.h; sourceTree = "<group>"; };
+		01BF2E031B6118BB001D7EBC /* SignInVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInVC.m; sourceTree = "<group>"; };
+		6EE5D9BFBFD8886C6F8BDC55 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		97319E6900F4932C07293E1C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FB2A5C8A5266D090235C7380 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01BF2DCB1B610F9B001D7EBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC42B138E126638B23F53DAD /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BF2DE71B610F9B001D7EBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01BF2DC51B610F9B001D7EBC = {
+			isa = PBXGroup;
+			children = (
+				01BF2DD01B610F9B001D7EBC /* Teamify */,
+				01BF2DED1B610F9B001D7EBC /* TeamifyTests */,
+				01BF2DCF1B610F9B001D7EBC /* Products */,
+				F0714FC0692114FEC044CB8B /* Pods */,
+				9054B9DAB3B7D68EFBBE2A57 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		01BF2DCF1B610F9B001D7EBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01BF2DCE1B610F9B001D7EBC /* Teamify.app */,
+				01BF2DEA1B610F9B001D7EBC /* TeamifyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01BF2DD01B610F9B001D7EBC /* Teamify */ = {
+			isa = PBXGroup;
+			children = (
+				01BF2DFF1B6116DF001D7EBC /* Images */,
+				01BF2DFE1B61143B001D7EBC /* Categories */,
+				01BF2DD51B610F9B001D7EBC /* AppDelegate.h */,
+				01BF2DD61B610F9B001D7EBC /* AppDelegate.m */,
+				01BF2DFA1B6112D5001D7EBC /* Constants.h */,
+				01BF2DDE1B610F9B001D7EBC /* Main.storyboard */,
+				01BF2DE11B610F9B001D7EBC /* Images.xcassets */,
+				01BF2DE31B610F9B001D7EBC /* LaunchScreen.xib */,
+				01BF2DD81B610F9B001D7EBC /* Teamify.xcdatamodeld */,
+				01BF2DD11B610F9B001D7EBC /* Supporting Files */,
+				01BF2E021B6118BB001D7EBC /* SignInVC.h */,
+				01BF2E031B6118BB001D7EBC /* SignInVC.m */,
+			);
+			path = Teamify;
+			sourceTree = "<group>";
+		};
+		01BF2DD11B610F9B001D7EBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01BF2DD21B610F9B001D7EBC /* Info.plist */,
+				01BF2DD31B610F9B001D7EBC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01BF2DED1B610F9B001D7EBC /* TeamifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				01BF2DF01B610F9B001D7EBC /* TeamifyTests.m */,
+				01BF2DEE1B610F9B001D7EBC /* Supporting Files */,
+			);
+			path = TeamifyTests;
+			sourceTree = "<group>";
+		};
+		01BF2DEE1B610F9B001D7EBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01BF2DEF1B610F9B001D7EBC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01BF2DFE1B61143B001D7EBC /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				01BF2DFB1B6112E7001D7EBC /* UILabel+TMFLabel.h */,
+				01BF2DFC1B6112ED001D7EBC /* UILabel+TMFLabel.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		01BF2DFF1B6116DF001D7EBC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				01BF2E001B6116E6001D7EBC /* LaunchLogo.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		9054B9DAB3B7D68EFBBE2A57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB2A5C8A5266D090235C7380 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0714FC0692114FEC044CB8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EE5D9BFBFD8886C6F8BDC55 /* Pods.debug.xcconfig */,
+				97319E6900F4932C07293E1C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01BF2DCD1B610F9B001D7EBC /* Teamify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01BF2DF41B610F9B001D7EBC /* Build configuration list for PBXNativeTarget "Teamify" */;
+			buildPhases = (
+				96BD7ED8492AF663869F7CA3 /* Check Pods Manifest.lock */,
+				01BF2DCA1B610F9B001D7EBC /* Sources */,
+				01BF2DCB1B610F9B001D7EBC /* Frameworks */,
+				01BF2DCC1B610F9B001D7EBC /* Resources */,
+				8CB575E05D3692029F592E9A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Teamify;
+			productName = Teamify;
+			productReference = 01BF2DCE1B610F9B001D7EBC /* Teamify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01BF2DE91B610F9B001D7EBC /* TeamifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01BF2DF71B610F9B001D7EBC /* Build configuration list for PBXNativeTarget "TeamifyTests" */;
+			buildPhases = (
+				01BF2DE61B610F9B001D7EBC /* Sources */,
+				01BF2DE71B610F9B001D7EBC /* Frameworks */,
+				01BF2DE81B610F9B001D7EBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01BF2DEC1B610F9B001D7EBC /* PBXTargetDependency */,
+			);
+			name = TeamifyTests;
+			productName = TeamifyTests;
+			productReference = 01BF2DEA1B610F9B001D7EBC /* TeamifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01BF2DC61B610F9B001D7EBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Nicholas Spitale";
+				TargetAttributes = {
+					01BF2DCD1B610F9B001D7EBC = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					01BF2DE91B610F9B001D7EBC = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 01BF2DCD1B610F9B001D7EBC;
+					};
+				};
+			};
+			buildConfigurationList = 01BF2DC91B610F9B001D7EBC /* Build configuration list for PBXProject "Teamify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01BF2DC51B610F9B001D7EBC;
+			productRefGroup = 01BF2DCF1B610F9B001D7EBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01BF2DCD1B610F9B001D7EBC /* Teamify */,
+				01BF2DE91B610F9B001D7EBC /* TeamifyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01BF2DCC1B610F9B001D7EBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01BF2DE01B610F9B001D7EBC /* Main.storyboard in Resources */,
+				01BF2E011B6116E6001D7EBC /* LaunchLogo.png in Resources */,
+				01BF2DE51B610F9B001D7EBC /* LaunchScreen.xib in Resources */,
+				01BF2DE21B610F9B001D7EBC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BF2DE81B610F9B001D7EBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CB575E05D3692029F592E9A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96BD7ED8492AF663869F7CA3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01BF2DCA1B610F9B001D7EBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01BF2DDA1B610F9B001D7EBC /* Teamify.xcdatamodeld in Sources */,
+				01BF2DFD1B6112ED001D7EBC /* UILabel+TMFLabel.m in Sources */,
+				01BF2E041B6118BB001D7EBC /* SignInVC.m in Sources */,
+				01BF2DD71B610F9B001D7EBC /* AppDelegate.m in Sources */,
+				01BF2DD41B610F9B001D7EBC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BF2DE61B610F9B001D7EBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01BF2DF11B610F9B001D7EBC /* TeamifyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01BF2DEC1B610F9B001D7EBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01BF2DCD1B610F9B001D7EBC /* Teamify */;
+			targetProxy = 01BF2DEB1B610F9B001D7EBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01BF2DDE1B610F9B001D7EBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01BF2DDF1B610F9B001D7EBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01BF2DE31B610F9B001D7EBC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01BF2DE41B610F9B001D7EBC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01BF2DF21B610F9B001D7EBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		01BF2DF31B610F9B001D7EBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01BF2DF51B610F9B001D7EBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EE5D9BFBFD8886C6F8BDC55 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Teamify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		01BF2DF61B610F9B001D7EBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97319E6900F4932C07293E1C /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Teamify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		01BF2DF81B610F9B001D7EBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TeamifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teamify.app/Teamify";
+			};
+			name = Debug;
+		};
+		01BF2DF91B610F9B001D7EBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TeamifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teamify.app/Teamify";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01BF2DC91B610F9B001D7EBC /* Build configuration list for PBXProject "Teamify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01BF2DF21B610F9B001D7EBC /* Debug */,
+				01BF2DF31B610F9B001D7EBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01BF2DF41B610F9B001D7EBC /* Build configuration list for PBXNativeTarget "Teamify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01BF2DF51B610F9B001D7EBC /* Debug */,
+				01BF2DF61B610F9B001D7EBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01BF2DF71B610F9B001D7EBC /* Build configuration list for PBXNativeTarget "TeamifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01BF2DF81B610F9B001D7EBC /* Debug */,
+				01BF2DF91B610F9B001D7EBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		01BF2DD81B610F9B001D7EBC /* Teamify.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				01BF2DD91B610F9B001D7EBC /* Teamify.xcdatamodel */,
+			);
+			currentVersion = 01BF2DD91B610F9B001D7EBC /* Teamify.xcdatamodel */;
+			path = Teamify.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 01BF2DC61B610F9B001D7EBC /* Project object */;
+}

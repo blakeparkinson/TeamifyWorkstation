@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Sign InVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SignInVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LaunchLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qdl-nM-ytt">
+                                <rect key="frame" x="202" y="62" width="220" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="PQM-5i-pcO"/>
+                                    <constraint firstAttribute="width" constant="220" id="cjh-BB-t2H"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0U6-8A-xXn">
+                                <rect key="frame" x="138" y="387" width="349" height="55"/>
+                                <color key="backgroundColor" red="0.8784313725490196" green="0.28235294117647058" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="gC3-fC-K1k"/>
+                                    <constraint firstAttribute="height" constant="55" id="uCa-6T-M4d"/>
+                                </constraints>
+                                <state key="normal" title="Clock Out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ0-w3-P1Q">
+                                <rect key="frame" x="138" y="450" width="349" height="55"/>
+                                <color key="backgroundColor" red="0.12941176470588234" green="0.75294117647058822" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="0gw-i4-XXi"/>
+                                    <constraint firstAttribute="width" constant="400" id="N3h-W6-lbq"/>
+                                </constraints>
+                                <state key="normal" title="Clock In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcZ-3L-c8o">
+                                <rect key="frame" x="138" y="513" width="349" height="55"/>
+                                <color key="backgroundColor" red="0.75294117650000003" green="0.72163093269104694" blue="0.61651608744894804" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="349" id="6mb-k6-YxA"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="Bgs-82-5t1"/>
+                                    <constraint firstAttribute="width" constant="400" id="LIZ-el-P19"/>
+                                    <constraint firstAttribute="height" constant="55" id="XZd-e0-apu"/>
+                                </constraints>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6mb-k6-YxA"/>
+                                        <exclude reference="Bgs-82-5t1"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="doSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g6c-rX-8Kg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="pcZ-3L-c8o" secondAttribute="centerX" id="9LD-LN-zHj"/>
+                            <constraint firstItem="Qdl-nM-ytt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="130" id="Bzj-m9-z21"/>
+                            <constraint firstItem="pcZ-3L-c8o" firstAttribute="top" secondItem="qJ0-w3-P1Q" secondAttribute="bottom" constant="15" id="CGL-Lm-0nm"/>
+                            <constraint firstItem="Qdl-nM-ytt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="Ier-BB-e9O"/>
+                            <constraint firstItem="qJ0-w3-P1Q" firstAttribute="top" secondItem="0U6-8A-xXn" secondAttribute="bottom" constant="15" id="JW2-Ww-yoY"/>
+                            <constraint firstAttribute="centerX" secondItem="Qdl-nM-ytt" secondAttribute="centerX" id="Rd4-8R-uZD"/>
+                            <constraint firstItem="0U6-8A-xXn" firstAttribute="top" secondItem="Qdl-nM-ytt" secondAttribute="bottom" constant="200" id="ahg-hm-TpV"/>
+                            <constraint firstAttribute="centerX" secondItem="qJ0-w3-P1Q" secondAttribute="centerX" id="uMY-3K-V3A"/>
+                            <constraint firstAttribute="centerX" secondItem="0U6-8A-xXn" secondAttribute="centerX" id="wpr-DM-4Fc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ier-BB-e9O"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="btnClockIn" destination="qJ0-w3-P1Q" id="vCH-v6-xld"/>
+                        <outlet property="btnClockOut" destination="0U6-8A-xXn" id="Ria-XV-PGT"/>
+                        <outlet property="btnSignIn" destination="pcZ-3L-c8o" id="MOW-Ox-UJA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="328"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchLogo.png" width="211" height="181"/>
+    </resources>
+</document>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LaunchIcon" highlightedImage="LaunchLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="04H-0P-Abd">
+                    <rect key="frame" x="252" y="78" width="116" height="94"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="94" id="CHf-6h-eNV"/>
+                        <constraint firstAttribute="height" constant="94" id="EiI-jD-UXL"/>
+                        <constraint firstAttribute="width" constant="220" id="RJE-if-axu"/>
+                        <constraint firstAttribute="height" constant="180" id="mwt-XY-spT"/>
+                        <constraint firstAttribute="width" constant="116" id="sCg-9Y-a4g"/>
+                        <constraint firstAttribute="width" constant="116" id="v0v-HH-W8h"/>
+                        <constraint firstAttribute="height" constant="94" id="wYZ-Hk-WtU"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="CHf-6h-eNV"/>
+                            <exclude reference="EiI-jD-UXL"/>
+                            <exclude reference="sCg-9Y-a4g"/>
+                            <exclude reference="v0v-HH-W8h"/>
+                            <exclude reference="wYZ-Hk-WtU"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="04H-0P-Abd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="78" id="1xk-zt-uib"/>
+                <constraint firstAttribute="centerX" secondItem="04H-0P-Abd" secondAttribute="centerX" id="AEW-cg-VI6"/>
+                <constraint firstAttribute="centerY" secondItem="04H-0P-Abd" secondAttribute="centerY" id="URs-yT-QeL"/>
+                <constraint firstAttribute="trailing" secondItem="04H-0P-Abd" secondAttribute="trailing" constant="112" id="cXM-PR-RLZ"/>
+                <constraint firstAttribute="trailing" secondItem="04H-0P-Abd" secondAttribute="trailing" constant="112" id="iEP-f1-hsK"/>
+                <constraint firstItem="04H-0P-Abd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="78" id="oqM-xd-WUT"/>
+                <constraint firstItem="04H-0P-Abd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="150" id="xZ2-AN-6yj"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1xk-zt-uib"/>
+                    <exclude reference="URs-yT-QeL"/>
+                    <exclude reference="cXM-PR-RLZ"/>
+                    <exclude reference="iEP-f1-hsK"/>
+                    <exclude reference="oqM-xd-WUT"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="550" y="413"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LaunchIcon" width="211" height="181"/>
+        <image name="LaunchLogo.png" width="211" height="181"/>
+    </resources>
+</document>
