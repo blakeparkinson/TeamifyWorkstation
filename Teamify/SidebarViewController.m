@@ -7,31 +7,42 @@
 //
 
 #import "SidebarViewController.h"
+#import "LocalDatastore.h"
+#import <ViewDeck/IIViewDeckController.h>
+#import "InitialViewController.h"
 
 @interface SidebarViewController ()
 
 @end
 
 @implementation SidebarViewController
-
+@synthesize lblName;
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
+    LocalDatastore *store = [LocalDatastore store];
+    NSString *name = [NSString stringWithFormat:@"%@ %@",
+                      [store.currentUser objectForKey:@"first_name"],[store.currentUser objectForKey:@"last_name"]];
+    [lblName setText:name];
+ 
 }
+
+
+- (IBAction)doSignOut:(id)sender {
+    InitialViewController *vc = (InitialViewController *)self.viewDeckController;
+    [vc goSignIn];
+}
+
+- (IBAction)doTimeCard:(id)sender {
+    [self.viewDeckController toggleLeftView];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

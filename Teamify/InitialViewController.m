@@ -13,18 +13,30 @@
 @end
 
 @implementation InitialViewController
-
-
+@synthesize SidebarVC;
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    self = [super initWithCenterViewController:[storyboard instantiateViewControllerWithIdentifier:@"signInVC"]
-                            leftViewController:[storyboard instantiateViewControllerWithIdentifier:@"SidebarVC"]];
+    SidebarVC = [storyboard instantiateViewControllerWithIdentifier:@"SidebarVC"];
+    
+    self = [super initWithCenterViewController:[storyboard instantiateViewControllerWithIdentifier:@"SignInVC"]
+                            leftViewController:nil];
+   
     if (self) {
-        // Add any extra init code here
+        [self setLeftSize:150.0f];
+      
     }
     return self;
 }
+
+-(void)goSignIn{
+    
+     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    [self setCenterController:[storyboard instantiateViewControllerWithIdentifier:@"SignInVC"]];
+    [self toggleLeftViewAnimated:NO];
+   
+}
+
 
 /*
 #pragma mark - Navigation

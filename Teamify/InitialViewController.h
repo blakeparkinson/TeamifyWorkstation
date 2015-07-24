@@ -7,7 +7,9 @@
 //
 
 #import "IIViewDeckController.h"
+#import "SidebarViewController.h"
 
 @interface InitialViewController : IIViewDeckController
-
+@property (nonatomic, retain) SidebarViewController *SidebarVC;
+-(void)goSignIn;
 @end

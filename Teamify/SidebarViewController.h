@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface SidebarViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *lblName;
+@property (weak, nonatomic) IBOutlet UIButton *btnTimeCard;
+@property (weak, nonatomic) IBOutlet UIButton *btnSignOut;
 
 @end

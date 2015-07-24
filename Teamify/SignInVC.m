@@ -9,6 +9,8 @@
 #import "SignInVC.h"
 #import <QuartzCore/QuartzCore.h>
 #import <ViewDeck/IIViewDeckController.h>
+#import "LocalDatastore.h"
+
 @interface SignInVC ()
 
 @end
@@ -29,7 +31,7 @@
     [self.btnSignIn.layer setBorderWidth:2.0f];
     self.btnSignIn.layer.cornerRadius = 5;
     self.btnSignIn.clipsToBounds = YES;
-    // Do any additional setup after loading the view.
+  
 }
 
 - (IBAction)doSignIn:(id)sender {
@@ -68,11 +70,10 @@
     
     [fetchRequest setPredicate:predicateID];
     NSArray *employees = [context executeFetchRequest:fetchRequest error:nil];
-    if([employees count] > 0){
+    
+    if([employees count] == 1){
+        [self signInUser:[employees objectAtIndex:0]];
         
-         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        [self.viewDeckController setCenterController:[storyboard instantiateViewControllerWithIdentifier:@"CenterVC"]];
-        [self.viewDeckController toggleLeftView];
     }
     else{
         
@@ -86,6 +87,26 @@
     }
 }
 
+-(void)signInUser:(NSManagedObject *)user{
+    LocalDatastore *store = [LocalDatastore store];
+    
+    [store.currentUser setObject:[user valueForKey:@"first_name"] forKey:@"first_name"];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    [self.viewDeckController setLeftController:[storyboard instantiateViewControllerWithIdentifier:@"SidebarVC"]];
+    [self.viewDeckController setCenterController:[storyboard instantiateViewControllerWithIdentifier:@"CenterVC"]];
+    
+    /*
+    if(![[store.currentUser objectForKey:@"id"] isEqualToString:[user valueForKey:@"id"]]){
+        [self.viewDeckController setLeftController:[storyboard instantiateViewControllerWithIdentifier:@"SidebarVC"]];
+        [self.viewDeckController setCenterController:[storyboard instantiateViewControllerWithIdentifier:@"CenterVC"]];
+    }
+     */
+   
+    [self.viewDeckController toggleLeftView];
+   
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
