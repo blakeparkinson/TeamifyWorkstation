@@ -105,7 +105,6 @@
    
     [self.viewDeckController toggleLeftView];
    
-    
 }
 
 - (void)didReceiveMemoryWarning {
